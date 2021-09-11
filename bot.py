@@ -4,7 +4,7 @@ import request
 import aviation
 from datetime import datetime
 
-bot = telebot.TeleBot("1916065908:AAGh7KMtQ4ck-GQAJ-nSn3-dheeG4g5It3w", parse_mode=None)
+bot = telebot.TeleBot(, parse_mode=None)
 r = requests.get('https://api.weather.yandex.ru/v2/forecast?')
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
